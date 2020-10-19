@@ -15,7 +15,7 @@
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
    <a href="https://github.com/lucastssb/nlw_03_happy/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/lucastssb/nlw_03_happystyle=social">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/lucastssb/nlw_03_happy/style=social">
   </a>
 </p>
 <!---<p align="center">
