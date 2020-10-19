@@ -1,10 +1,7 @@
 <h1 align="center">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src=".github/logo.svg" width="250px" />
+    <img alt="NextLevelWeek" title="#NextLevelWeek" src=".github/logo.png" width="250px" />
 </h1>
 
-<h4 align="center"> 
-	:construction: NextLevelWeek 3.0 🚀 In progress...:construction:
-</h4>
 <p align="center">	
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/lucastssb/nlw_03_happy">
 	
@@ -53,7 +50,7 @@ Happy is a project developed based on Children's Day.
 That aims to connect people to orphanages that allow to make a children's day more special.
 
 <h1 align="center">
-    <img alt="Example" title="Example" src=".github/happy.svg" width="500px" />
+    <img alt="Example" title="Example" src=".github/happy.png" width="500px" />
 </h1>
 
 
