@@ -18,9 +18,6 @@
     <img alt="Stargazers" src="https://img.shields.io/github/stars/lucastssb/nlw_03_happy?style=social">
   </a>
 </p>
-<!---<p align="center">
-<a href="https://insomnia.rest/run/?label=NLW%203.0%20-%20Happy&uri=https%3A%2F%2Fraw.githubusercontent.com%2FDanielObara%2FNLW-3.0%2Fmaster%2Fbackend%2FInsomnia.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
-</p> -->
 <p align="center">
   <a href="#-nlw">Next Level Week</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
