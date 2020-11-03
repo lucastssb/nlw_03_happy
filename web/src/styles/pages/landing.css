@@ -24,6 +24,25 @@
     background: url('../../images/landing.svg') no-repeat 80% center;
 }
 
+.content-wrapper header {
+    display: flex;
+    align-items: center;
+}
+
+.content-wrapper header .location {
+    font-weight: 800;
+
+    margin-left: 50px;
+
+    font-size: 24px;
+    line-height: 34px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+}
+
 #page-landing .content-wrapper main {
     max-width: 350px;
 }
@@ -40,22 +59,36 @@
     line-height: 34px;
 }
 
-.content-wrapper .location {
+.content-wrapper .restrictAreaAccessButton {
     position: absolute;
     right: 0;
     top: 0;
 
-    font-size: 24px;
+    text-decoration: none;
+
+    background: #12D4E0;
+    border-radius: 20px;
+
+    color: #FFF;
+
+    width: 222px;
+    height: 56px;
+
+    font-size: 20px;
     line-height: 34px;
+    font-weight: 700;
 
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    text-align: right;
+    transition: background-color 0.8s;
 }
 
-.content-wrapper .location {
-    font-weight: 800;
+.content-wrapper .restrictAreaAccessButton:hover {
+    background: #96FEFF;
+    color: #15C3D6;
 }
 
 .content-wrapper .enter-app {

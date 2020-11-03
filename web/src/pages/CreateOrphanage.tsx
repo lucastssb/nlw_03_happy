@@ -193,4 +193,3 @@ export default function CreateOrphanage() {
   );
 }
 
-// return `https://a.tile.openstreetmap.org/${z}/${x}/${y}.png`;
