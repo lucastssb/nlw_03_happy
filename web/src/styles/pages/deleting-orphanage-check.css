@@ -1,0 +1,90 @@
+#page-deleting-orphanage-check {
+  width: 100vw;
+  height: 100vh;
+
+  background: #ff669d;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-deleting-orphanage-check .content-wrapper {
+  background: url("../../images/deleting-check.svg") no-repeat 80% center;
+
+  width: 100%;
+  max-width: 1100px;
+
+  height: 100%;
+  max-height: 680px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  /*background: #ffffff;*/
+}
+
+#page-deleting-orphanage-check .content-wrapper #confirmation-box {
+  height: 50%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.content-wrapper #confirmation-box h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 80px;
+
+  color: #ffffff;
+}
+
+.content-wrapper #confirmation-box .options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-wrapper #confirmation-box .options a {
+  text-decoration: none;
+  background: #d6487b;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 143px;
+  height: 64px;
+
+  border-radius: 20px;
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #ffffff;
+}
+
+.content-wrapper #confirmation-box .options button {
+  border: none;
+  background: #69d648;
+
+  width: 143px;
+  height: 64px;
+
+  border-radius: 20px;
+
+  margin-left: 10px;
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #ffffff;
+}

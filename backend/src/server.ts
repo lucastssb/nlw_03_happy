@@ -8,6 +8,9 @@ import errorHandler from './errors/handler';
 
 import './database/connection';
 
+const PORT = 3333;
+const HOST = '0.0.0.0'
+
 const app = express();
 
 app.use(cors());
@@ -17,4 +20,4 @@ app.use('/uploads', express.static(path.join(__dirname, '..', 'uploads')));
 app.use(errorHandler);
 
 
-app.listen(3333);
+app.listen(PORT, HOST);

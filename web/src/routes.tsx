@@ -1,26 +1,15 @@
-import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React, { useContext } from 'react';
 
-import Landing from './pages/Landing';
-import OrphanagesMap from './pages/OrphanagesMap';
-import Orphanage from './pages/Orphanage';
-import CreateOrphanage from './pages/CreateOrphanage';
-import Login from './pages/Login';
+import AppRoutes from './routes/app.routes'
+import AuthRoutes from './routes/auth.routes';
+
+import AuthContext from './contexts/auth';
+
 
 function Routes() {
-    return(
-        <BrowserRouter>
-            <Switch>
-                <Route path='/' exact component={Landing} />
-                <Route path='/app' component={OrphanagesMap} />
-
-                <Route path='/login' component={Login} />
-
-                <Route path='/orphanages/create' exact component={CreateOrphanage} />
-                <Route path='/orphanages/:id' component={Orphanage} />
-            </Switch>
-        </BrowserRouter>
-    );
+    const { signed } = useContext(AuthContext);
+    
+    return signed ? <AuthRoutes/> : <AppRoutes/>;
 }
 
 export default Routes;

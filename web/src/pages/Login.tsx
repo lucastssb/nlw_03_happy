@@ -1,32 +1,27 @@
-import React, { useState, FormEvent } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useContext, FormEvent} from "react";
+import { Link, Redirect} from "react-router-dom";
 import { FiArrowLeft } from "react-icons/fi";
-import api from "../services/api";
+import AuthContext from "../contexts/auth";
 
 import "../styles/pages/login.css";
 
 import logoImg from "../images/logo-login-page.svg";
 
-
 export default function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [remember, setRemember] = useState(false);
+  const { signIn, signed } = useContext(AuthContext);
+
+  console.log(sessionStorage.getItem('token_happy_temp'));
 
   function handleLogin(event: FormEvent) {
-    event.preventDefault();
-
-    api.post('auth/login', {
-      email: email,
-      password: password,
-    }).then(response => {
-      console.log(response);
-    })
-    
-    
+    signIn(event, email, password, remember);
   }
 
-  return (
+  return signed ? (
+  <Redirect to='/dashboard'/>
+  ) : (
     <div id="login-page">
       <main>
         <img src={logoImg} alt="Happy" />
@@ -38,37 +33,35 @@ export default function Login() {
       <div id="login-form">
         <form onSubmit={handleLogin} className="create-login-form">
           <fieldset>
-
             <legend>Fazer login</legend>
 
             <div className="input-block">
               <label htmlFor="email">Email</label>
-              <input 
+              <input
                 value={email}
-                onChange={event => setEmail(event.target.value)}
-                type="text" 
-                id="email" 
+                onChange={(event) => setEmail(event.target.value)}
+                type="text"
+                id="email"
               />
             </div>
 
             <div className="input-block">
               <label htmlFor="password">Senha</label>
-              <input 
+              <input
                 value={password}
-                onChange={event => setPassword(event.target.value)}
-                type="password" 
-                id="password" 
+                onChange={(event) => setPassword(event.target.value)}
+                type="password"
+                id="password"
               />
             </div>
 
             <div className="options-block">
-                <label className="remember-login">
-                    <input type="checkbox" id="remember"/>
-                    <span className="checkbox-custom">Lembrar-me</span>
-                </label>
-                <Link to="/">Esqueci minha senha</Link>
+              <label className="remember-login">
+                <input type="checkbox" id="remember" onChange={() => remember ? setRemember(false) : setRemember(true)}/>
+                <span className="checkbox-custom">Lembrar-me</span>
+              </label>
+              <Link to="/">Esqueci minha senha</Link>
             </div>
-
           </fieldset>
           <button className="confirm-button" type="submit">
             Entrar
