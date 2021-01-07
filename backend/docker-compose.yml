@@ -11,6 +11,8 @@ services:
       - ./pgdata:/var/lib/postgres/data
     ports:
       - "5432:5432"
+    networks: 
+      - app_net
 
   app:
     build: .
@@ -18,4 +20,10 @@ services:
       - db
     ports:
       - "3333:3333"
+    networks: 
+      - app_net
     command: yarn dev
+    
+
+networks: 
+  app_net:
