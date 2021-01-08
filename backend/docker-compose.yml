@@ -23,6 +23,7 @@ services:
     networks: 
       - app_net
     command: yarn dev
+    command: yarn typeorm migration:run
     
 
 networks: 
