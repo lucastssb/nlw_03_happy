@@ -142,7 +142,7 @@ After merging your receipt request to done, you can delete a branch from yours.
 
 ## :memo: License
 
-This project is under the MIT license. See the [LICENSE](https://github.com/DanielObara/NLW-3.0/blob/master/LICENSE) for details.
+This project is under the MIT license.
 
 Made with ♥ by Lucas Barbosa :wave: [Get in touch!](https://www.linkedin.com/in/lucas-barbosa-60b56416b/)
 
